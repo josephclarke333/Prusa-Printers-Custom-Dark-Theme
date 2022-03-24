@@ -1,0 +1,158 @@
+@-moz-document domain("prusaprinters.org") {
+/*///////// Colors /////////*/
+
+:root
+{
+    --background-primary: #111111;
+    --background-secondary: #000000;
+    --background-selected: #FA6831;
+    --background-tertiary: #282828;
+    --background-navbar: #000000;
+    
+    --text-primary: #FFFFFF;
+    --text-secondary: #000000;
+    --text-selected: #FFFFFF;
+    --text-navbar: #FFFFFF;
+    
+    --highlight-primary: #FA6831;
+    
+    --border-radius: 25px;
+    --border-radius-small: 5px;
+    --border-width: 2px;
+    --border-navbar-width: 52px;
+}
+
+/*///////// Basic /////////*/
+
+/* Primary Background */
+.featured-prints, div .content, div .fullwidth-container, body, app-blogposts
+{
+    background: var(--background-primary) !important;
+}
+
+/* Secondary Backgrounds */
+div .print-list-item, div .accordion-item section, div .categories, .user-info-wrapper-border
+{
+    background: var(--background-secondary) !important;
+}
+
+/* Tertiary Background */
+.badge-primary
+{
+    background: var(--background-tertiary) !important;
+}
+
+/* Background Selected */
+.accordion-item .active a, .contests-link, .badge-dark, .nav-item .active, .info-box-wrapper, .btn
+{
+    background: var(--background-selected) !important;
+}
+
+/*///////// Text /////////*/
+
+/* Text Primary */
+.print-list-item a, div .accordion-item, .dropdown-title, div .categories *, .contests-link, #print-list-header, #print-list-header div, div .content, i, .contest-card *, .nav-item *, .published-prints-header h2, .user-info-wrapper-border *
+{
+    color: var(--text-primary) !important;
+}
+
+/* Text Secondary */
+.ng-select *, #print-list-header .ng-select *
+{
+    color: var(--text-secondary) !important;
+}
+
+/* Text Selected */
+.accordion-item .active a, .nav-item .active, .info-box-wrapper, .btn
+{
+    color: var(--text-selected) !important;
+}
+
+/* Text Hover Secondary */
+.contests-link:hover
+{
+    color: var(--text-secondary) !important;
+}
+
+/*///////// Borders  /////////*/
+
+/* Print List Items */
+div .print-list-item
+{
+    border-color: var(--highlight-primary) !important;
+    border-radius: var(--border-radius) !important;
+    border-width: var(--border-width) !important;
+}
+
+/* Side Bar */
+.accordion-item market-filter-item , .accordion-item .categories, .accordion-item .categories *, .contests-link, .accordion-item ul, .accordion-item li a, .user-info-wrapper-border
+{
+    border-color: var(--highlight-primary) !important;
+    border-width: var(--border-width) !important;  
+}
+
+/* Border Square */
+.contest-card
+{
+    border-color: var(--highlight-primary) !important;
+    border-radius: 0px !important;
+    border-width: var(--border-width) !important;   
+}
+
+/* Other */
+.info-box-wrapper, .btn, .badge-primary
+{
+    border-color: var(--highlight-primary) !important;
+    border-radius: var(--border-radius-small) !important;
+    border-width: var(--border-width) !important;  
+}
+
+/*///////// Overwrite Issues /////////*/
+/* Button Group Borders */
+.detail-content div button
+{
+    border-color: var(--background-primary) !important;
+    border-radius: var(--border-radius-small) !important;
+    border-width: var(--border-width) !important;
+}
+
+/* Like Button */
+.align-items-center .icon-like-not-liked, .align-items-center .icon-like-liked
+{
+    border-width: 0px !important;
+    background: var(--background-secondary) !important;
+}
+
+.align-items-center .icon-like-liked .like-fill
+{
+    fill: var(--highlight-primary) !important;
+}
+
+.icon-like-liked .mr-1 .like-fill
+{
+    fill: var(--text-secondary) !important;
+}
+
+.icon-like-not-liked .mr-1 .like-fill:hover, .has-like .icon-like-not-liked:hover .mr-1 .like-fill
+{
+    fill: var(--text-secondary) !important;
+}
+
+
+/*/////////  NavBar /////////*/
+
+/* Main Colors */
+.header-menu *
+{
+    background: var(--background-navbar) !important;
+    color: var(--text-navbar) !important;
+}
+
+/* Bottom Border */
+.header-menu
+{
+    border-bottom-style: solid !important;
+    border-color: var(--highlight-primary) !important;
+    border-width: var(--border-navbar-width) !important;
+}
+}
